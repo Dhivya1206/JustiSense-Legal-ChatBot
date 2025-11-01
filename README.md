@@ -1,10 +1,5 @@
 # JustiSense
 
-### Key Points
-- It seems likely that the features listed, including multilingual support, document analysis, contract generation, chat interface, chat history, contract enhancement, legal advice, multilingual voice assistant, and secure decentralized learning through federated learning, are comprehensive for the JustiSense application.
-- Research suggests that implementing a multilingual voice assistant involves using browser-based Web Speech API for speech recognition and synthesis, supporting multiple Indian languages.
-- The evidence leans toward secure decentralization through federated learning being feasible for document type classification, using client-side PDF processing with PDF.js and local model training, though it adds complexity.
-
 --------------------------------
 
 #### Introduction to JustiSense
@@ -22,7 +17,7 @@ JustiSense offers a range of features, likely including:
 - **Multilingual Voice Assistant**: An unexpected detail is that you can interact via voice in Indian languages, using your browser’s Web Speech API for real-time, private speech recognition and synthesis.
 - **Secure Decentralized Learning through Federated Learning**: Improves document classification without sharing your data, using local browser processing with PDF.js and sending only model updates to a server, enhancing privacy.
 
-To set it up, clone the repository, install dependencies like Streamlit and Google Generative AI, and configure API keys. Run it with `streamlit run app.py`, then use features like uploading PDFs or asking questions via chat or voice.
+To set it up, clone the repository, install dependencies like Streamlit and Google Generative AI, and configure API keys. Run it with `streamlit run chat.py`, then use features like uploading PDFs or asking questions via chat or voice.
 
 #### Usage and Configuration
 Use the sidebar to select your language, upload documents for analysis, and generate contracts. The voice assistant works in browsers supporting JavaScript, and federated learning is optional, requiring consent for local model training. Configure API keys via environment variables and adjust settings like language support in the code.
@@ -35,8 +30,6 @@ This section provides an in-depth exploration of the features and implementation
 
 #### Understanding JustiSense and Its Features
 JustiSense is a Streamlit-based application designed to assist with legal document analysis, contract generation, and multilingual support, particularly for Indian languages. The initial feature set includes multilingual support for UI and responses, document analysis for extracting text and key information, contract generation with customizable templates, a chat interface for querying documents, chat history for review, contract enhancement for improving generated contracts, and legal advice through an interactive interface. These features, as listed, seem comprehensive for a legal assistance tool, but the addition of a multilingual voice assistant and secure decentralization through federated learning significantly expands its capabilities, catering to diverse user needs and privacy concerns.
-
-The thinking trace suggests that the user requested these additional features, and the analysis confirms their feasibility, though with varying levels of complexity. The current time, 12:54 PM PDT on Thursday, March 27, 2025, is noted, but it does not impact the feature analysis, as the focus is on technical implementation rather than temporal context.
 
 #### Detailed Analysis of Multilingual Voice Assistant
 The multilingual voice assistant feature aims to enable voice-based interaction in multiple Indian languages, such as Hindi, Tamil, Telugu, and others, enhancing accessibility for users who prefer speaking over typing. The thinking trace explores how this can be implemented using the Web Speech API, which is browser-based and supports speech recognition and synthesis in various languages, including those specified in the INDIAN_LANGUAGES dictionary.
